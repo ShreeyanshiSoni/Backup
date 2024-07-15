@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/java/features",glue= "stepDefinations",plugin="json:target/jsonReports/cucumer_report.json",tags="@DeletePlaceAPI")
+@CucumberOptions(features="src/test/java/features",glue= "stepDefinations",plugin="json:target/jsonReports/cucumer_report.json",tags="@AddPlaceAPI")
 public class TestRunner {
 
 }
