@@ -1,0 +1,14 @@
+package stepDefinations;
+import io.cucumber.java.*;
+import resources.utils;
+
+public class hooks extends utils {
+	
+	public void beforeScenarios()
+	{
+		stepDefinations sd=new stepDefinations();
+		sd.add_place_payload(Name, Address, Language);
+		
+	}
+
+}

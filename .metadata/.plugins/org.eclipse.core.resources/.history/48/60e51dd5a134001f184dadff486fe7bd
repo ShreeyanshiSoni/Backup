@@ -1,0 +1,10 @@
+package APIs;
+
+public class jira_create_issue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

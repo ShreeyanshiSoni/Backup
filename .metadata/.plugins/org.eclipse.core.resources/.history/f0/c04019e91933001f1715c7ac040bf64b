@@ -1,0 +1,31 @@
+package APIs;
+
+import org.testng.annotations.Test;
+
+import Files.ADD_JSON;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
+import io.restassured.matcher.ResponseAwareMatcher;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import static org.hamcrest.Matchers.*;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class working_with_Library {
+
+		@Test
+		private static void library() {
+			// TODO Auto-generated method stub
+			RestAssured.baseURI="http://216.10.245.166/";
+			given().queryParam("key","qaclick123").header("Content-Type","application/json")
+			.body(ADD_JSON.Add_Book("uhfoh","1234"))
+			.when().post("Library/Addbook.php")
+			.then().log().all().assertThat().statusCode(200);
+			
+		}
+		
+
+	}
+
+	

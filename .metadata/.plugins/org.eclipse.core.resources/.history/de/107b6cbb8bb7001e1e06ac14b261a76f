@@ -1,0 +1,30 @@
+package demo;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Assignment3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/loginpagePractise/");
+		driver.manage().window().maximize();
+		driver.findElement(By.id("username")).sendKeys("rahulshettyacademy");
+		driver.findElement(By.id("password")).sendKeys("learning");
+		driver.findElement(By.xpath("//span[@class='checkmark']")).click();
+		driver.switchTo().alert().accept();
+		WebElement option=driver.findElement(By.className("checkmark"));
+		Select s=new Select(option);
+		s.selectByVisibleText("Consultant");
+		
+		
+
+	}
+
+}

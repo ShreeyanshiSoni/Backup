@@ -1,0 +1,10 @@
+package Files;
+
+public class Update_Location_JSON {
+	
+	public static String Update_Location_JSON() {
+		return 1;
+		
+	}
+
+}

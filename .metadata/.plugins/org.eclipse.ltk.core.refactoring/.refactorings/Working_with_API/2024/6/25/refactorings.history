@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Working_with_API&apos;&#x0D;&#x0A;- Original project: &apos;Working_with_API&apos;&#x0D;&#x0A;- Original element: &apos;Add_Location_API.java&apos;" description="Delete element" element1="/src=/optional=/true=/=/maven.pomderived=/true=/&lt;{Add_Location_API.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1718883861220" subPackages="false" version="1.0"/>
+</session>

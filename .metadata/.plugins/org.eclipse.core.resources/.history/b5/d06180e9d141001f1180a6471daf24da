@@ -1,0 +1,17 @@
+package stepDefinations;
+import java.io.IOException;
+
+import io.cucumber.java.*;
+import resources.utils;
+
+public class hooks extends utils {
+	
+	public void beforeScenarios() throws IOException
+	{
+		stepDefinations sd=new stepDefinations();
+		sd.add_place_payload("Name", "Address", "Language");
+		sd.when_user_calls_with_http_request("AddPlaceAPI", "POST");
+		
+	}
+
+}

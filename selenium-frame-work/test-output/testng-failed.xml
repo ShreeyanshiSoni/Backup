@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Error Msg Test(failed)">
+    <groups>
+      <run>
+        <include name="Error_validations"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="rahulshettyacademy.ErrorMsg">
+        <methods>
+          <include name="launch"/>
+          <include name="Error_msg"/>
+        </methods>
+      </class> <!-- rahulshettyacademy.ErrorMsg -->
+    </classes>
+  </test> <!-- Error Msg Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

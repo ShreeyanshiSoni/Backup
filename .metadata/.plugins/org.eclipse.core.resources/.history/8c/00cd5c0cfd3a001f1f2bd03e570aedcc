@@ -1,0 +1,77 @@
+package API;
+
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+
+import static io.restassured.RestAssured.*;
+
+import java.io.File;
+
+import POJO.login_json;
+import POJO.Token_JSON;
+import POJO.add_product_JSON;
+import io.restassured.specification.RequestSpecification;
+
+public class login {
+	public static void main(String[] args) {
+		/*------------------------------------------Login-----------------------------------------*/
+		//Creating a Spec builder
+		RequestSpecification req=new RequestSpecBuilder()
+				.setContentType(ContentType.JSON)
+				.setBaseUri("https://rahulshettyacademy.com").build();
+		
+		//getting JSON from POJO classes
+		login_json ljson=new login_json();
+		ljson.setUserEmail("Anuragsoni@gmail.com");
+		ljson.setUserPassword("Anurag@21");
+		
+		
+		
+		//passing spec builder to given
+		RequestSpecification reqlogin=given().spec(req).body(ljson);
+		
+		
+		//deserialization of login response
+		Token_JSON log_res=reqlogin.when().post("api/ecom/auth/login").as(Token_JSON.class);
+		
+		//access all values from login response
+		String token=log_res.getToken();
+		String user_id=log_res.getUserId();
+		
+		System.out.print(token);
+		
+		
+		/*------------------------------------------create product-----------------------------------------*/
+		
+	
+		RequestSpecification add_new_product=new RequestSpecBuilder()
+				.addHeader("Authorization",token)
+				.setBaseUri("https://rahulshettyacademy.com").build();
+		
+		RequestSpecification add_product=given().log().all().spec(add_new_product)
+				.param("productName","heels")
+				.param("productAddedBy",user_id)
+				.param("productCategory","fashion")
+				.param("productSubCategory","footwear")
+				.param("productPrice","11500")
+				.param("productDescription","Addias Originals")
+				.param("productFor","women").log().all()
+				.multiPart("productimage",new File("C:\\Users\\Shreeyas\\OneDrive - AMDOCS\\Backup Folders\\Desktop\\Document-\\Rest API\\heel.jpg"));
+		
+		String product_id=add_product.when().post("/api/ecom/product/add-product").then().log().all().extract().response().asString();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		
+	}
+}

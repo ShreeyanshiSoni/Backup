@@ -1,0 +1,35 @@
+package resources;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import POJO.Google_Maps_Add;
+import POJO.location;
+
+public class TestDataBuild {
+	
+	Google_Maps_Add gma=new Google_Maps_Add();
+	
+	//setting value to all variable using that object
+	gma.setAccuracy(50);
+	gma.setName("Frontline house");
+	gma.setPhone_number("(+91)9838933937");
+	gma.setAddress("29, side layout, cohen 09");
+	gma.setWebsite("http://google.com");
+	gma.setLanguage("French-IN");
+	
+	//setting value to a list type variable
+	List<String> l=new ArrayList<String>();
+	l.add("shoe park");
+	l.add("shop");
+	gma.setTypes(l);
+	
+	//setting values to variable having sub JSON
+	location lo=new location();
+	lo.setLat("67");
+	lo.setLng("88");
+	gma.setLocation(lo);
+	return gma;
+
+
+}

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="E2E2_REST_API"/>
+			<item value="API"/>
+			<item value="Working_Apis"/>
+			<item value="Working_with_API"/>
+			<item value="Move_with_ease"/>
+			<item value="shreeyanshi"/>
+			<item value="shreeya"/>
+			<item value="one"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="E2E2_REST_API"/>
+			<item value="API"/>
+			<item value="Working_Apis"/>
+			<item value="Working_with_API"/>
+			<item value="Amazon"/>
+			<item value="selenium"/>
+			<item value="one"/>
+			<item value="java-selenium"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\selenium webdriver\workspace\API_Cucumber_BDD"/>
+			<item value="C:\selenium webdriver\workspace\Move_with_ease\src\Login.java"/>
+			<item value="C:\selenium webdriver\workspace\Travel_with_ease\src"/>
+			<item value="C:\selenium webdriver\workspace\selenium-frame-work"/>
+			<item value="C:\selenium webdriver\workspace\demo"/>
+			<item value="C:\selenium webdriver\workspace\introduction"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="CUCUMBER"/>
+			<item value="Cucumber"/>
+			<item value="Cucumber_BDD"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="BDD"/>
+			<item value="API_Cucumber_BDD"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+		<list key="archetypeGroupId">
+			<item value="org.apache.maven.archetypes"/>
+		</list>
+		<list key="archetypeArtifactId">
+			<item value="maven-archetype-quickstart"/>
+			<item value="org.apache.maven.archetypes"/>
+		</list>
+		<list key="archetypeVersion">
+			<item value="1.4"/>
+		</list>
+		<list key="repositoryUrl">
+			<item value=""/>
+		</list>
+	</section>
+</section>

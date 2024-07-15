@@ -1,0 +1,9 @@
+java.lang.AssertionError: expected:<404> but was:<200>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepDefinations.stepDefinations.the_api_call_is_success_with_status_code(stepDefinations.java:58)
+	at ✽.the API call is success with status code 200(file:///C:/selenium%20webdriver/workspace/APIFramework2/src/test/java/features/Validation.feature:22)
+
